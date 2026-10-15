@@ -9,9 +9,6 @@
 //   gif_playback.h      - gif drawing/tinting logic and the apply*() helpers
 //   web_interface.h     - the embedded control web page and its HTTP API
 //
-// Behavior summary:
-//   - Click the button: cycle tint color (white -> red -> green -> blue ->
-//     orange -> purple -> ... -> rainbow -> back to white)
 //   - Double-click quickly: reset to the GIF's normal, untinted colors
 //   - Hold the button (500ms+): cycle to the next GIF in gifList[]
 //   - Web page, via your home WiFi: visit the IP printed at boot, or
@@ -19,11 +16,7 @@
 //   - Web page, via the board's own WiFi: connect to AP_SSID (see
 //     config.h) and visit http://192.168.4.1 - always works, home WiFi
 //     or not. Most phones will auto-prompt to open it (captive portal).
-//
-// On boot: initializing gif -> pairing/connecting gif -> startup gif
-// (in real colors) -> hands off to the normal button-controlled gifs.
-//
-// To add more GIFs, see the instructions at the top of gifs_data.h.
+
 
 #if defined(WF1)
   #include "hd-wf1-esp32s2-config.h"
