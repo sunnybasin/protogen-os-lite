@@ -1,6 +1,3 @@
-// colors.h - the tint color palette selectable via the button/web page,
-// plus the special animated modes (rainbow, gradient rainbow, pastel
-// gradient) that sit after the static colors in the same index space.
 #pragma once
 
 struct TintColor { uint8_t r, g, b; };
