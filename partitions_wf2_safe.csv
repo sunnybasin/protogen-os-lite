@@ -1,7 +1,4 @@
-# Name,     Type, SubType,  Offset,   Size
-# No filesystem partition needed anymore - the GIFs are compiled directly
-# into the firmware itself, so all the extra room goes to the app partition.
-# Still sized to stay well within the chip's reliable ~4.5MB region.
+
 
 nvs,        data, nvs,      0x9000,   0x5000
 phy_init,   data, phy,      0xf000,   0x1000
