@@ -1,6 +1,3 @@
-
-
-
 #if defined(WF1)
   #include "hd-wf1-esp32s2-config.h"
 #elif defined(WF2)
