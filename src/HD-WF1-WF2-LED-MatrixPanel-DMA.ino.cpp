@@ -1,21 +1,4 @@
-// LED Matrix Firmware for the Huidu WF2 (ESP32-S3) HUB75 Control Card.
-//
-// This file just wires everything together and holds setup()/loop() -
-// the actual logic lives in these files (all in src/ alongside this one):
-//   config.h          - board pins, WiFi/AP settings, timing constants
-//   gifs_data.h        - every embedded gif and the lists that reference them
-//   colors.h           - tint color palette and the rainbow color-wheel helper
-//   display_state.h    - shared runtime state (current gif/color/brightness/etc.)
-//   gif_playback.h      - gif drawing/tinting logic and the apply*() helpers
-//   web_interface.h     - the embedded control web page and its HTTP API
-//
-//   - Double-click quickly: reset to the GIF's normal, untinted colors
-//   - Hold the button (500ms+): cycle to the next GIF in gifList[]
-//   - Web page, via your home WiFi: visit the IP printed at boot, or
-//     http://protocontroller.local
-//   - Web page, via the board's own WiFi: connect to AP_SSID (see
-//     config.h) and visit http://192.168.4.1 - always works, home WiFi
-//     or not. Most phones will auto-prompt to open it (captive portal).
+
 
 
 #if defined(WF1)
