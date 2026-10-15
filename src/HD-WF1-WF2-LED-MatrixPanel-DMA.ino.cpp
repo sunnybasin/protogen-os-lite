@@ -52,7 +52,7 @@ void setup() {
 
   dumpPartitionTable();
 
-  /*-------------------- START THE HUB75E DISPLAY --------------------*/
+  /*-------------------- startup --------------------*/
   HUB75_I2S_CFG mxconfig(
     PANEL_RES_X,
     PANEL_RES_Y,
@@ -116,11 +116,11 @@ void setup() {
   webServer.on("/api/setBrightness", handleApiSetBrightness);
   webServer.on("/api/setPower", handleApiSetPower);
   webServer.on("/api/setWifi", handleApiSetWifi);
-  webServer.onNotFound(handleRoot); // any unrecognized path (captive portal probes, typos, etc.) just shows the control page
+  webServer.onNotFound(handleRoot); 
   webServer.begin();
   Serial.println("Web server started.");
 
-  /*-------------------- Startup gif + normal gif playback --------------------*/
+  /*-------------------- playback --------------------*/
   dma_display->clearScreen();
   playBootGif(startupGif, STARTUP_GIF_MAX_MS);
   openCurrentGif();
